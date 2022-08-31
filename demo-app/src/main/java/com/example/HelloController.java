@@ -18,7 +18,7 @@ public class HelloController {
     @GetMapping("/hello") 
     public String hello()
     {
-        // System.out.println("Database URL:" + env.getProperty("spring.datasource.url"));
+        // System.out.println("Database URL" + env.getProperty("spring.datasource.url"));
         // System.out.println("Database URL" + env.getProperty("spring.datasource.user"));
         
         return String.format("Hello from your %s environment !!! %s", target, System.getProperty("user.home"));
